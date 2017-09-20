@@ -6,7 +6,7 @@ def QuickSort(arr, low, high):
 
 
 	if low < high:
-		pass
+		
 
 
 
