@@ -20,19 +20,18 @@ class Solution(object):
         d = {}
 
         for x in range(0, len(s)):
-        	print s[x]
+        	print(s[x])
 
         	if d.get(s[x]) == None:
         		d[s[x]] =1
         	else:
         		d[s[x]] +=1
 
-        print d.items()
-        for key, value in d.items():
-        	if value == 1:
-				return s.index(key)        		
-
-
+        
+        for x in range(0, len(s)):
+            if d.get(s[x]) == 1:
+                return x
+            
         return -1
 
-print Solution().firstUniqChar('leetcode');
+print(Solution().firstUniqChar('leetcode'))
