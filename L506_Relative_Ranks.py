@@ -1,0 +1,38 @@
+# Given scores of N athletes, find their relative ranks and the people with the top three highest scores, who will be awarded medals: "Gold Medal", "Silver Medal" and "Bronze Medal".
+
+# Example 1:
+# Input: [5, 4, 3, 2, 1]
+# Output: ["Gold Medal", "Silver Medal", "Bronze Medal", "4", "5"]
+# Explanation: The first three athletes got the top three highest scores, so they got "Gold Medal", "Silver Medal" and "Bronze Medal". 
+# For the left two athletes, you just need to output their relative ranks according to their scores.
+
+
+
+class Solution(object):
+    def findRelativeRanks(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[str]
+        """
+        
+        orgNums = nums.copy()
+
+        nums = sorted(nums, reverse = True)
+
+        for x in range(0,len(nums)):
+
+        	index = orgNums.index(nums[x])
+
+        	if x == 0:
+        		orgNums[index] = 'Gold Medal'
+        	elif x == 1:
+        		orgNums[index] = 'Silver Medal'
+        	elif x == 2:
+        		orgNums[index] = 'Bronze Medal'
+        	else:
+        		orgNums[index] = str(x + 1)
+        	pass
+
+        return orgNums
+
+print(Solution().findRelativeRanks([10,2,8,4,3]))
