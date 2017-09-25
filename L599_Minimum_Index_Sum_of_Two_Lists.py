@@ -28,52 +28,33 @@ class Solution(object):
         :type list2: List[str]
         :rtype: List[str]
         """
-        
-        lenList1 = len(list1)
-        lenList2 = len(list2)
-        d = {} 
+        d = {}
 
-        for i in range(0,lenList2):
-
-
-        	if i < lenList1:
-
-        		key1 = list1[i]
-        		key2 = list2[i]
-
-        		if key1 not in d: 
-        			d[key1] = 1
-        		else:
-        			d[key1] +=1
-
-        		if key2 not in d:
-        			d[key2] = 1
-        		else:
-        			d[key2] +=1
-        		
-        		pass
+        # Updated Algorithm
+        for x in range(0,len(list1)):
+        	if x not in d:
+        		d[list1[x]] = 1
         	else:
-        		key2 = list2[i]
-        		if key2 not in d:
-        			d[key2] = 1
-        		else:
-        			d[key2] +=1
+        		d[list1[x]] +=1
 
-        leastIndex = lenList1 + lenList2 - 2
-        flag = -1
-        for key, value in d.items():
-        	if value == 2:
-        		index1 = list1.index(key)
-        		index2 = list2.index(key)
-        		if (index1 + index2) <= leastIndex:
-        			flag = index1
-
-        print(flag)
+        posSum = len(list1) + len(list2) - 2
+        result = []
+        for key in list2:
+        	if d.get(key) == 1:
+        		indexSum = list1.index(key) + list2.index(key)
+        		if indexSum < posSum:
+        			posSum = indexSum
+        			result = []
+        			result.append(key)
+        		elif indexSum == posSum:
+        			result.append(key)
 
 
-        return d
-arr1 = ["Shogun", "Tapioca Express", "Burger King", "KFC"]
-arr2 = ["KFC", "Shogun", "Burger King"]
+
+        return result
+
+arr1 = ["Shogun","Tapioca Express","Burger King","KFC"]
+arr2 = ["KFC","Shogun","Burger King"]
 
 
 
