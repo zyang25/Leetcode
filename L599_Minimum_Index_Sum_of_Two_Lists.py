@@ -44,6 +44,7 @@ class Solution(object):
         		indexSum = list1.index(key) + list2.index(key)
         		if indexSum < posSum:
         			posSum = indexSum
+        			# We need to reset the list because there is smaller index
         			result = []
         			result.append(key)
         		elif indexSum == posSum:
