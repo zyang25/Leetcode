@@ -14,16 +14,24 @@ class ListNode(object):
         self.val = x
         self.next = None
 
+    def p(self):
+    	print(str(self.val))
+
 class Solution(object):
     def reverseList(self, head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
+
+        prev = None
         while head != None:
-        	lastHead = head
-        	head = head.next
-        	head.next = lastHead
+            temp = head.next
+            head.next = prev
+            prev = head
+            head = temp
+            break
+        return prev
 
 
 
