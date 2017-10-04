@@ -30,8 +30,10 @@ class Solution(object):
         for ele in ransomNote:
         	if d.get(ele) == None:
         		return False
-
-
+        	else:
+        		d[ele] -= 1
+        		if(d[ele] <= 0):
+        			del d[ele]
 
         return True
 
