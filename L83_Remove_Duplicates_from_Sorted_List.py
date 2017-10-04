@@ -4,27 +4,7 @@
 # Given 1->1->2, return 1->2.
 # Given 1->1->2->3->3, return 1->2->3.
 
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-    def p(self):
-    	print(str(self.val))
-
-    def pList(self):
-
-
-    	temp = self
-    	while temp != None:
-	    	if temp.next == None:
-	    		print(str(temp.val) + '->' + 'None')
-	    	else:
-	    		print(str(temp.val) + '->' + str(temp.next.val))
-	    	print(self.next.val)
-	    	temp = self.next
-	    	print(temp)
+from ListNode import ListNode
 
 class Solution(object):
     def deleteDuplicates(self, head):
@@ -32,22 +12,19 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
+        curr = head
         prev = head
-        while head != None:
+
+        while curr != None:
         	#print('Begins')
         	
         	temp = head.next
 
-        	if head.next == None or head.next.val != head.val:
-        		#prev.next = head
-        		#prev = head
-        		prev.next = head
-        		prev = head
-        		prev.pList()
-        		
+            if curr.val != prev.val:
+                prev.next = curr
+                prev = curr
 
-        	
-        	head = temp
+            curr = curr.next
 
         return prev
 
