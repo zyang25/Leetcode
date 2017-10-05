@@ -7,26 +7,26 @@
 from ListNode import ListNode
 
 class Solution(object):
-    def deleteDuplicates(self, head):
-        """
+	def deleteDuplicates(self, head):
+		"""
         :type head: ListNode
         :rtype: ListNode
         """
-        curr = head
-        prev = head
+		curr = head
+		prev = head
 
-        while curr != None:
-        	#print('Begins')
-        	
-        	temp = head.next
+		newHead = prev
 
-            if curr.val != prev.val:
-                prev.next = curr
-                prev = curr
+		while curr != None:
 
-            curr = curr.next
+			if curr.val != prev.val:
+				prev.next = curr
+				prev = curr
+			elif curr.next == None:
+				prev.next = None
+			curr = curr.next
 
-        return prev
+		return newHead
 
 
 
@@ -35,9 +35,9 @@ linkedList.next = ListNode(4)
 linkedList.next.next = ListNode(3)
 
 
-#Solution().deleteDuplicates(linkedList)
+Solution().deleteDuplicates(linkedList).pList()
 
 
 
-linkedList.pList()
+#linkedList.pList()
 
