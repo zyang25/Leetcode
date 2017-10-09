@@ -9,7 +9,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
+from ListNode import ListNode
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
         """
@@ -17,12 +17,14 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
+        newList = None
+        
         
         if l1 == None or l2 == None:
         	return
 
         newVal = l1.val + l2.val
 
-        
+
 
 
