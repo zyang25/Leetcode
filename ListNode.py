@@ -1,15 +1,15 @@
 # Definition for singly-linked list.
 class ListNode(object):
 
-    @classmethod
     def __init__(self, x):
         self.val = x
         self.next = None
 
-
-
     def p(self):
-    	print(str(self.val))
+        if self == None:
+            print('None')
+        else:
+            print(str(self.val))
 
     def pList(self):
 
