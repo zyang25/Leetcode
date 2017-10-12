@@ -17,39 +17,74 @@ class Solution(object):
 		:type l2: ListNode
 		:rtype: ListNode
 		"""
-		prev = None
-		temp = None
-		while l1 != None or l2 != None:
 
-			if l1 != None and l2 != None:
-				if l1.val > l2.val:
-					temp = ListNode(l2.val)
-					l2 = l2.next
-				else:
-					temp = ListNode(l1.val)
-					l1 = l1.next
+		# if l1 == None:
+		# 	return l2
+		# if l2 == None:
+		# 	return l1
 
-			if l1 == None and l2 != None:
-				temp = ListNode(l2.val)
+		# newList = None
+		# prev = None
+		# temp = None
+		# count = 0
+		# while l1 != None or l2 != None:
+
+		# 	if l1 != None and l2 != None:
+		# 		if l1.val > l2.val:
+		# 			temp = ListNode(l2.val)
+		# 			l2 = l2.next
+		# 		else:
+		# 			temp = ListNode(l1.val)
+		# 			l1 = l1.next
+
+		# 	if l1 == None and l2 != None:
+		# 		temp = ListNode(l2.val)
+		# 		l2 = l2.next
+
+		# 	if l2 == None and l1 != None:
+		# 		temp = ListNode(l1.val)
+		# 		l1 = l1.next
+
+
+		# 	if prev != None:
+		# 		if newList == None:
+		# 			newList = prev
+
+		# 		prev.next = temp
+
+
+		# 	prev = temp
+
+
+
+		# return newList
+
+
+		newHead = ListNode(0)
+		lastNode = newHead
+
+		# Key -> get last node.next reference
+
+		while l1 != None and l2 != None:
+			if l1.val < l2.val:
+				lastNode.next = l1
+				l1 = l1.next
+			else:
+				lastNode.next = l2
 				l2 = l2.next
 
-			if l2 == None and l1 != None:
-				temp = ListNode(l1.val)
-				l1 = l1.next
+			lastNode = lastNode.next
 
 
-			
-			
-			if prev != None:
-				prev.next = temp
+		if l1 == None:
+			lastNode.next = l2
+		else:
+			lastNode.next = l1
 
-			prev = temp
+		return newHead.next
 
-			#temp = temp.next
 
-		return temp
-
-l1 = ListNode(10)
+l1 = ListNode(2)
 l1.next = ListNode(15)
 l1.next.next = ListNode(20)
 
@@ -59,6 +94,7 @@ l2.next = ListNode(2)
 l2.next.next = ListNode(3)
 
 
-result = Solution().mergeTwoLists(l1,l2)
+#l1 = None
+#l2 = None
 
-result.pList()
+Solution().mergeTwoLists(l1,l2).pList()
