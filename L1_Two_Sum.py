@@ -18,15 +18,14 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        pointer = 0
-        twoSum = list()
-        indexY = 0
-        for x in nums[:]:
-        	for y in nums[indexY:]:
-        		if indexY + x == target:
-        			twoSum.add(nums.index(x))
-        			twoSum.add(nums.index(y))
-        			return twoSum
-        		indexY += 1
+        d = {}
+        for x in range(0, len(nums)):
+            t = target - nums[x]
+            if d.get(t) != None:
+                return [d.get(t), x]
+            
+            d[nums[x]] = x
+        
+        return []
 
 Solution().twoSum([10,20,30,40], 70)
