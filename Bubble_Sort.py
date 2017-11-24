@@ -1,5 +1,9 @@
-def BubbleSort(arr):
+# Two for loop to swap the numbers
 
+# The first loop to take the element in order
+# the second loop to take the sub array of the first element
+
+def BubbleSort(arr):
 
 	x = 0
 	while x < len(arr):
@@ -13,6 +17,5 @@ def BubbleSort(arr):
 		x += 1
 	return arr
 
-
-arr = [10,33,21,1,2,7]
+arr = [10, 33, 21, 1, 2, 7]
 print(BubbleSort(arr))
