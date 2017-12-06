@@ -206,7 +206,6 @@ ContStr	../env/lib/python3.6/tokenize.py	/^ContStr = group(StringPrefix + r"'[^\
 Container	../env/lib/python3.6/_collections_abc.py	/^class Container(metaclass=ABCMeta):$/;"	kind:class	line:374
 Coroutine	../env/lib/python3.6/_collections_abc.py	/^class Coroutine(Awaitable):$/;"	kind:class	line:114
 CoroutineType	../env/lib/python3.6/types.py	/^CoroutineType = type(_c)$/;"	kind:variable	line:24
-Counter	../L7_Reverse Integer.py	/^from collections import Counter$/;"	kind:namespace	line:44
 Counter	../env/lib/python3.6/collections/__init__.py	/^class Counter(dict):$/;"	kind:class	line:468
 DEBUG	../env/lib/python3.6/re.py	/^    DEBUG = sre_compile.SRE_FLAG_DEBUG # dump pattern after compilation$/;"	kind:variable	line:160
 DEBUG_BUILD	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    DEBUG_BUILD = False  # Changed in _setup()$/;"	kind:variable	line:602
@@ -593,6 +592,7 @@ L344_Reverse_String.py	../L344_Reverse_String.py	1;"	kind:file	line:1
 L349_Intersection_of_Two_Arrays.py	../L349_Intersection_of_Two_Arrays.py	1;"	kind:file	line:1
 L35_Search_Insert_Position.py	../L35_Search_Insert_Position.py	1;"	kind:file	line:1
 L371_Sum_of_Two_Integers.py	../L371_Sum_of_Two_Integers.py	1;"	kind:file	line:1
+L374. Guess Number Higher or Lower.py	../L374. Guess Number Higher or Lower.py	1;"	kind:file	line:1
 L383_Ransom_Note.py	../L383_Ransom_Note.py	1;"	kind:file	line:1
 L387.First_Unique_Character_in_a_String.py	../L387.First_Unique_Character_in_a_String.py	1;"	kind:file	line:1
 L387_First_Unique_Character_in_a_String.py	../L387_First_Unique_Character_in_a_String.py	1;"	kind:file	line:1
@@ -601,11 +601,13 @@ L461. Hamming Distance.py	../L461. Hamming Distance.py	1;"	kind:file	line:1
 L461_Hamming_Distance.py	../L461_Hamming_Distance.py	1;"	kind:file	line:1
 L476. Number Complement.py	../L476. Number Complement.py	1;"	kind:file	line:1
 L506_Relative_Ranks.py	../L506_Relative_Ranks.py	1;"	kind:file	line:1
+L53. Maximum Subarray.py	../L53. Maximum Subarray.py	1;"	kind:file	line:1
 L557. Reverse Words in a String III.py	../L557. Reverse Words in a String III.py	1;"	kind:file	line:1
 L561_Array_Partition_I.py	../L561_Array_Partition_I.py	1;"	kind:file	line:1
 L599_Minimum_Index_Sum_of_Two_Lists.py	../L599_Minimum_Index_Sum_of_Two_Lists.py	1;"	kind:file	line:1
 L617_Merge_Two_Binary_Trees.py	../L617_Merge_Two_Binary_Trees.py	1;"	kind:file	line:1
 L657_Judge_Route_Circle.py	../L657_Judge_Route_Circle.py	1;"	kind:file	line:1
+L665. Non-decreasing Array.py	../L665. Non-decreasing Array.py	1;"	kind:file	line:1
 L728. Self Dividing Numbers.py	../L728. Self Dividing Numbers.py	1;"	kind:file	line:1
 L78_Subsets.py	../L78_Subsets.py	1;"	kind:file	line:1
 L7_Reverse Integer.py	../L7_Reverse Integer.py	1;"	kind:file	line:1
@@ -625,7 +627,6 @@ LPAR	../env/lib/python3.6/token.py	/^LPAR = 7$/;"	kind:variable	line:20
 LSQB	../env/lib/python3.6/token.py	/^LSQB = 9$/;"	kind:variable	line:22
 LambdaType	../env/lib/python3.6/types.py	/^LambdaType = type(lambda: None)         # Same as FunctionType$/;"	kind:variable	line:13
 LazyLoader	../env/lib/python3.6/importlib/util.py	/^class LazyLoader(abc.Loader):$/;"	kind:class	line:254
-LeagueTable	../L7_Reverse Integer.py	/^class LeagueTable:$/;"	kind:class	line:47
 ListNode	../L206_Reverse_Linked_List.py	/^class ListNode(object):$/;"	kind:class	line:12
 ListNode	../L21_Merge_Two_Sorted_Lists.py	/^from ListNode import ListNode$/;"	kind:namespace	line:12
 ListNode	../L237_Delete_Node_in_a_Linked_List.py	/^class ListNode(object):$/;"	kind:class	line:8
@@ -686,7 +687,6 @@ OP_IGNORE	../env/lib/python3.6/sre_constants.py	/^OP_IGNORE = {$/;"	kind:variabl
 Octnumber	../env/lib/python3.6/tokenize.py	/^Octnumber = r'0[oO](?:_?[0-7])+'$/;"	kind:variable	line:125
 OpenWrapper	../env/lib/python3.6/io.py	/^OpenWrapper = _io.open # for compatibility with _pyio$/;"	kind:variable	line:59
 Operator	../env/lib/python3.6/tokenize.py	/^Operator = group(r"\\*\\*=?", r">>=?", r"<<=?", r"!=",$/;"	kind:variable	line:175
-OrderedDict	../L7_Reverse Integer.py	/^from collections import OrderedDict$/;"	kind:namespace	line:45
 OrderedDict	../env/lib/python3.6/collections/__init__.py	/^    from _collections import OrderedDict$/;"	kind:namespace	line:297
 OrderedDict	../env/lib/python3.6/collections/__init__.py	/^class OrderedDict(dict):$/;"	kind:class	line:71
 OrderedDict	../env/lib/python3.6/enum.py	/^    from _collections import OrderedDict$/;"	kind:namespace	line:8
@@ -859,6 +859,7 @@ Solution	../L344_Reverse_String.py	/^class Solution(object):$/;"	kind:class	line
 Solution	../L349_Intersection_of_Two_Arrays.py	/^class Solution(object):$/;"	kind:class	line:12
 Solution	../L35_Search_Insert_Position.py	/^class Solution(object):$/;"	kind:class	line:12
 Solution	../L371_Sum_of_Two_Integers.py	/^class Solution(object):$/;"	kind:class	line:7
+Solution	../L374. Guess Number Higher or Lower.py	/^class Solution(object):$/;"	kind:class	line:22
 Solution	../L383_Ransom_Note.py	/^class Solution(object):$/;"	kind:class	line:15
 Solution	../L387.First_Unique_Character_in_a_String.py	/^class Solution(object):$/;"	kind:class	line:13
 Solution	../L387_First_Unique_Character_in_a_String.py	/^class Solution(object):$/;"	kind:class	line:14
@@ -867,11 +868,13 @@ Solution	../L461. Hamming Distance.py	/^class Solution(object):$/;"	kind:class	l
 Solution	../L461_Hamming_Distance.py	/^class Solution(object):$/;"	kind:class	line:1
 Solution	../L476. Number Complement.py	/^class Solution(object):$/;"	kind:class	line:16
 Solution	../L506_Relative_Ranks.py	/^class Solution(object):$/;"	kind:class	line:11
+Solution	../L53. Maximum Subarray.py	/^class Solution(object):$/;"	kind:class	line:12
 Solution	../L557. Reverse Words in a String III.py	/^class Solution(object):$/;"	kind:class	line:9
 Solution	../L561_Array_Partition_I.py	/^class Solution(object):$/;"	kind:class	line:1
 Solution	../L599_Minimum_Index_Sum_of_Two_Lists.py	/^class Solution(object):$/;"	kind:class	line:24
 Solution	../L617_Merge_Two_Binary_Trees.py	/^class Solution:$/;"	kind:class	line:7
 Solution	../L657_Judge_Route_Circle.py	/^class Solution:$/;"	kind:class	line:14
+Solution	../L665. Non-decreasing Array.py	/^class Solution(object):$/;"	kind:class	line:20
 Solution	../L728. Self Dividing Numbers.py	/^class Solution(object):$/;"	kind:class	line:17
 Solution	../L78_Subsets.py	/^class Solution:$/;"	kind:class	line:20
 Solution	../L7_Reverse Integer.py	/^class Solution(object):$/;"	kind:class	line:19
@@ -1143,6 +1146,7 @@ String	../env/lib/python3.6/tokenize.py	/^String = group(StringPrefix + r"'[^\\n
 StringPrefix	../env/lib/python3.6/tokenize.py	/^StringPrefix = group(*_all_string_prefixes())$/;"	kind:variable	line:157
 SubPattern	../env/lib/python3.6/sre_parse.py	/^class SubPattern:$/;"	kind:class	line:109
 SubsequentHeaderError	../env/lib/python3.6/tarfile.py	/^class SubsequentHeaderError(HeaderError):$/;"	kind:class	line:304
+Subsets.py	../Subsets.py	1;"	kind:file	line:1
 SystemRandom	../env/lib/python3.6/random.py	/^class SystemRandom(Random):$/;"	kind:class	line:663
 T	../env/lib/python3.6/encodings/punycode.py	/^def T(j, bias):$/;"	kind:function	line:70
 T	../env/lib/python3.6/re.py	/^    T = TEMPLATE$/;"	kind:variable	line:159
@@ -1541,7 +1545,6 @@ __init__	../L237_Delete_Node_in_a_Linked_List.py	/^	def __init__(self):$/;"	kind
 __init__	../L237_Delete_Node_in_a_Linked_List.py	/^    def __init__(self, x):$/;"	kind:member	line:9
 __init__	../L257_Binary_Tree_Paths.py	/^    def __init__(self, x):$/;"	kind:member	line:17
 __init__	../L617_Merge_Two_Binary_Trees.py	/^    def __init__(self, x):$/;"	kind:member	line:2
-__init__	../L7_Reverse Integer.py	/^    def __init__(self, players):$/;"	kind:member	line:48
 __init__	../ListNode.py	/^    def __init__(self, x):$/;"	kind:member	line:4
 __init__	../TreeNode.py	/^    def __init__(self, x):$/;"	kind:member	line:3
 __init__	../env/lib/python3.6/__future__.py	/^    def __init__(self, optionalRelease, mandatoryRelease, compiler_flag):$/;"	kind:member	line:79
@@ -2635,6 +2638,7 @@ charbuffertype	../env/lib/python3.6/encodings/uu_codec.py	/^    charbuffertype =
 charbuffertype	../env/lib/python3.6/encodings/zlib_codec.py	/^    charbuffertype = bytes$/;"	kind:variable	line:60
 charbuffertype	../env/lib/python3.6/encodings/zlib_codec.py	/^    charbuffertype = bytes$/;"	kind:variable	line:63
 charmap.py	../env/lib/python3.6/encodings/charmap.py	1;"	kind:file	line:1
+checkPossibility	../L665. Non-decreasing Array.py	/^    def checkPossibility(self, nums):$/;"	kind:member	line:21
 check_enableusersite	../env/lib/python3.6/site.py	/^def check_enableusersite():$/;"	kind:function	line:285
 check_str	../env/lib/python3.6/os.py	/^        def check_str(value):$/;"	kind:function	line:726
 checkcache	../env/lib/python3.6/linecache.py	/^def checkcache(filename=None):$/;"	kind:function	line:53
@@ -3955,6 +3959,7 @@ get_source	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    def get_s
 get_source	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    def get_source(self, fullname):$/;"	kind:member	line:891
 get_source	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    def get_source(self, fullname):$/;"	kind:member	line:943
 get_source	../env/lib/python3.6/importlib/abc.py	/^    def get_source(self, fullname):$/;"	kind:member	line:217
+get_subset	../Subsets.py	/^def get_subset(arr):$/;"	kind:function	line:1
 get_suffixes	../env/lib/python3.6/imp.py	/^def get_suffixes():$/;"	kind:function	line:105
 get_tag	../env/lib/python3.6/imp.py	/^def get_tag():$/;"	kind:function	line:67
 get_terminal_size	../env/lib/python3.6/shutil.py	/^def get_terminal_size(fallback=(80, 24)):$/;"	kind:function	line:1048
@@ -4151,6 +4156,8 @@ groups	../env/lib/python3.6/sre_parse.py	/^    def groups(self):$/;"	kind:member
 grp	../env/lib/python3.6/tarfile.py	/^    grp = None$/;"	kind:variable	line:59
 grp	../env/lib/python3.6/tarfile.py	/^    import grp$/;"	kind:namespace	line:57
 gt	../env/lib/python3.6/operator.py	/^def gt(a, b):$/;"	kind:function	line:47
+guess	../L374. Guess Number Higher or Lower.py	/^    def guess(num):$/;"	kind:member	line:42
+guessNumber	../L374. Guess Number Higher or Lower.py	/^    def guessNumber(self, n):$/;"	kind:member	line:23
 gzip	../env/lib/python3.6/tarfile.py	/^            import gzip$/;"	kind:namespace	line:1627
 gzopen	../env/lib/python3.6/tarfile.py	/^    def gzopen(cls, name, mode="r", fileobj=None, compresslevel=9, **kwargs):$/;"	kind:member	line:1619
 hammingDistance	../L461. Hamming Distance.py	/^    def hammingDistance(self, x, y):$/;"	kind:member	line:24
@@ -4435,6 +4442,7 @@ match	../env/lib/python3.6/re.py	/^def match(pattern, string, flags=0):$/;"	kind
 match	../env/lib/python3.6/sre_parse.py	/^    def match(self, char):$/;"	kind:member	line:248
 matmul	../env/lib/python3.6/operator.py	/^def matmul(a, b):$/;"	kind:function	line:108
 maxEle	../179_Largest_Number.py	/^maxEle = arr[0]$/;"	kind:variable	line:16
+maxSubArray	../L53. Maximum Subarray.py	/^    def maxSubArray(self, nums):$/;"	kind:member	line:13
 maybe	../env/lib/python3.6/tokenize.py	/^def maybe(*choices): return group(*choices) + '?'$/;"	kind:function	line:114
 mbc	../env/lib/python3.6/encodings/big5.py	/^import _multibytecodec as mbc$/;"	kind:namespace	line:8
 mbc	../env/lib/python3.6/encodings/big5hkscs.py	/^import _multibytecodec as mbc$/;"	kind:namespace	line:8
@@ -4620,7 +4628,6 @@ peek	../env/lib/python3.6/weakref.py	/^    def peek(self):$/;"	kind:member	line:
 perror	../env/lib/python3.6/tokenize.py	/^    def perror(message):$/;"	kind:function	line:736
 pickle	../env/lib/python3.6/copyreg.py	/^def pickle(ob_type, pickle_function, constructor_ob=None):$/;"	kind:function	line:12
 pickle_complex	../env/lib/python3.6/copyreg.py	/^    def pickle_complex(c):$/;"	kind:function	line:34
-player_rank	../L7_Reverse Integer.py	/^    def player_rank(self, rank):$/;"	kind:member	line:58
 pop	../env/lib/python3.6/_collections_abc.py	/^    def pop(self):$/;"	kind:member	line:586
 pop	../env/lib/python3.6/_collections_abc.py	/^    def pop(self, index=-1):$/;"	kind:member	line:989
 pop	../env/lib/python3.6/_collections_abc.py	/^    def pop(self, key, default=__marker):$/;"	kind:member	line:790
@@ -4712,7 +4719,6 @@ readlines	../env/lib/python3.6/tempfile.py	/^    def readlines(self, *args):$/;"
 real_distutils	../env/lib/python3.6/distutils/__init__.py	/^    real_distutils = imp.load_module("_virtualenv_distutils", None, distutils_path, ('', '', imp.PKG_DIRECTORY))$/;"	kind:variable	line:17
 realpath	../env/lib/python3.6/ntpath.py	/^realpath = abspath$/;"	kind:variable	line:554
 realpath	../env/lib/python3.6/posixpath.py	/^def realpath(filename):$/;"	kind:function	line:382
-record_result	../L7_Reverse Integer.py	/^    def record_result(self, player, score):$/;"	kind:member	line:51
 recursive_repr	../env/lib/python3.6/functools.py	/^from reprlib import recursive_repr$/;"	kind:namespace	line:24
 recursive_repr	../env/lib/python3.6/reprlib.py	/^def recursive_repr(fillvalue='...'):$/;"	kind:function	line:12
 reduce	../env/lib/python3.6/enum.py	/^from functools import reduce$/;"	kind:namespace	line:3
@@ -4904,7 +4910,6 @@ sitecustomize	../env/lib/python3.6/site.py	/^        import sitecustomize$/;"	ki
 so	../env/lib/python3.6/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	kind:namespace	line:5
 softspace	../env/lib/python3.6/tempfile.py	/^    def softspace(self):$/;"	kind:member	line:750
 sort	../env/lib/python3.6/collections/__init__.py	/^    def sort(self, *args, **kwds): self.data.sort(*args, **kwds)$/;"	kind:member	line:1090
-sorted_key	../L7_Reverse Integer.py	/^    def sorted_key(p):$/;"	kind:member	line:55
 source_from_cache	../env/lib/python3.6/imp.py	/^def source_from_cache(path):$/;"	kind:function	line:91
 source_from_cache	../env/lib/python3.6/importlib/_bootstrap_external.py	/^def source_from_cache(path):$/;"	kind:function	line:308
 source_from_cache	../env/lib/python3.6/importlib/util.py	/^from ._bootstrap_external import source_from_cache$/;"	kind:namespace	line:10
@@ -5022,7 +5027,6 @@ system	../env/lib/python3.6/importlib/util.py	/^        warnings.warn('The impor
 system	../env/lib/python3.6/importlib/util.py	/^        warnings.warn('The import system now takes care of this automatically.',$/;"	kind:namespace	line:159
 system	../env/lib/python3.6/importlib/util.py	/^    warnings.warn('The import system now takes care of this automatically.',$/;"	kind:namespace	line:186
 t	../env/lib/python3.6/copy.py	/^t = getattr(types, "CodeType", None)$/;"	kind:variable	line:118
-table	../L7_Reverse Integer.py	/^table = LeagueTable(['Charles', 'Marcus', 'Mike', 'Chris', 'Arnold', ])$/;"	kind:variable	line:63
 tabsize	../env/lib/python3.6/tokenize.py	/^tabsize = 8$/;"	kind:variable	line:215
 takes	../env/lib/python3.6/importlib/util.py	/^        warnings.warn('The import system now takes care of this automatically.',$/;"	kind:namespace	line:140
 takes	../env/lib/python3.6/importlib/util.py	/^        warnings.warn('The import system now takes care of this automatically.',$/;"	kind:namespace	line:159
