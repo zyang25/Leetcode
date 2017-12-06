@@ -13,9 +13,16 @@
 # minStack.pop();
 # minStack.top();      --> Returns 0.
 # minStack.getMin();   --> Returns -2.
-import sys
-class MinStack:
 
+
+
+class MinStack:
+    '''
+    Use two stacks
+    One stack to store the original data
+    Second stack to keep track the minimal data
+    when the stack pop it, we also need to check if we are poping the min element
+    '''
     def __init__(self):
         """
         initialize your data structure here.
