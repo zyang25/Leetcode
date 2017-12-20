@@ -2,12 +2,6 @@
 
 # Pivot -> 5-1 /2 = 2
 def QuickSort(arr, low, high):
-	pivot = (high - low)/2
+	pivot = (high - low)/2 + low
 
-
-	if low < high:
-		
-
-
-
-	pass
+arr = [12, 3, 1, 89, 76, 34]
