@@ -577,6 +577,7 @@ KeyedRef	../env/lib/python3.6/weakref.py	/^class KeyedRef(ref):$/;"	kind:class	l
 KeysView	../env/lib/python3.6/_collections_abc.py	/^class KeysView(MappingView, Set):$/;"	kind:class	line:708
 L	../env/lib/python3.6/re.py	/^    L = LOCALE$/;"	kind:variable	line:152
 L13_Roman_to_Integer.py	../L13_Roman_to_Integer.py	1;"	kind:file	line:1
+L155. Min Stack.py	../L155. Min Stack.py	1;"	kind:file	line:1
 L169_Majority_Element.py	../L169_Majority_Element.py	1;"	kind:file	line:1
 L171_Excel_Sheet_Column_Number.py	../L171_Excel_Sheet_Column_Number.py	1;"	kind:file	line:1
 L1_Two_Sum.py	../L1_Two_Sum.py	1;"	kind:file	line:1
@@ -658,6 +659,7 @@ MappingView	../env/lib/python3.6/_collections_abc.py	/^class MappingView(Sized):
 MemberDescriptorType	../env/lib/python3.6/types.py	/^MemberDescriptorType = type(FunctionType.__globals__)$/;"	kind:variable	line:51
 MetaPathFinder	../env/lib/python3.6/importlib/abc.py	/^class MetaPathFinder(Finder):$/;"	kind:class	line:47
 MethodType	../env/lib/python3.6/types.py	/^MethodType = type(_C()._m)$/;"	kind:variable	line:34
+MinStack	../L155. Min Stack.py	/^class MinStack:$/;"	kind:class	line:19
 ModuleSpec	../env/lib/python3.6/importlib/_bootstrap.py	/^class ModuleSpec:$/;"	kind:class	line:318
 ModuleSpec	../env/lib/python3.6/importlib/machinery.py	/^from ._bootstrap import ModuleSpec$/;"	kind:namespace	line:5
 ModuleType	../env/lib/python3.6/site.py	/^    ModuleType = type(os)$/;"	kind:variable	line:90
@@ -886,6 +888,8 @@ SourceLoader	../env/lib/python3.6/importlib/abc.py	/^class SourceLoader(_bootstr
 SourcelessFileLoader	../env/lib/python3.6/importlib/_bootstrap_external.py	/^class SourcelessFileLoader(FileLoader, _LoaderBasics):$/;"	kind:class	line:881
 SourcelessFileLoader	../env/lib/python3.6/importlib/machinery.py	/^from ._bootstrap_external import SourcelessFileLoader$/;"	kind:namespace	line:15
 Special	../env/lib/python3.6/tokenize.py	/^Special = group(r'\\r?\\n', r'\\.\\.\\.', r'[:;.,@]')$/;"	kind:variable	line:181
+SpecialDictionary	../interview_questions_dictionarySetAll.py	/^class SpecialDictionary(object):$/;"	kind:class	line:5
+SpecialDictionary2	../interview_questions_dictionarySetAll.py	/^class SpecialDictionary2(object):$/;"	kind:class	line:39
 SpecialFileError	../env/lib/python3.6/shutil.py	/^class SpecialFileError(OSError):$/;"	kind:class	line:61
 SpooledTemporaryFile	../env/lib/python3.6/tempfile.py	/^class SpooledTemporaryFile:$/;"	kind:class	line:629
 StopTokenizing	../env/lib/python3.6/tokenize.py	/^class StopTokenizing(Exception): pass$/;"	kind:class	line:219
@@ -1540,6 +1544,7 @@ __import__	../env/lib/python3.6/importlib/_bootstrap.py	/^def __import__(name, g
 __imul__	../env/lib/python3.6/collections/__init__.py	/^    def __imul__(self, n):$/;"	kind:member	line:1078
 __imul__	../env/lib/python3.6/operator.py	/^__imul__ = imul$/;"	kind:variable	line:457
 __index__	../env/lib/python3.6/operator.py	/^__index__ = index$/;"	kind:variable	line:431
+__init__	../L155. Min Stack.py	/^    def __init__(self):$/;"	kind:member	line:26
 __init__	../L206_Reverse_Linked_List.py	/^    def __init__(self, x):$/;"	kind:member	line:13
 __init__	../L237_Delete_Node_in_a_Linked_List.py	/^	def __init__(self):$/;"	kind:member	line:15
 __init__	../L237_Delete_Node_in_a_Linked_List.py	/^    def __init__(self, x):$/;"	kind:member	line:9
@@ -1637,6 +1642,8 @@ __init__	../env/lib/python3.6/weakref.py	/^    def __init__(*args, **kw):$/;"	ki
 __init__	../env/lib/python3.6/weakref.py	/^    def __init__(self, dict=None):$/;"	kind:member	line:354
 __init__	../env/lib/python3.6/weakref.py	/^    def __init__(self, ob, callback, key):$/;"	kind:member	line:339
 __init__	../env/lib/python3.6/weakref.py	/^    def __init__(self, obj, func, *args, **kwargs):$/;"	kind:member	line:526
+__init__	../interview_questions_dictionarySetAll.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:43
+__init__	../interview_questions_dictionarySetAll.py	/^    def __init__(self, *args, **kwargs):$/;"	kind:member	line:9
 __init__.py	../env/lib/python3.6/collections/__init__.py	1;"	kind:file	line:1
 __init__.py	../env/lib/python3.6/distutils/__init__.py	1;"	kind:file	line:1
 __init__.py	../env/lib/python3.6/encodings/__init__.py	1;"	kind:file	line:1
@@ -2448,6 +2455,7 @@ _wrap	../env/lib/python3.6/importlib/_bootstrap_external.py	/^        def _wrap(
 _wrap_close	../env/lib/python3.6/os.py	/^class _wrap_close:$/;"	kind:class	line:988
 _write_atomic	../env/lib/python3.6/importlib/_bootstrap_external.py	/^def _write_atomic(path, data, mode=0o666):$/;"	kind:function	line:106
 a	../env/lib/python3.6/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	kind:namespace	line:5
+a	../logic_tester.py	/^a="Welcome"$/;"	kind:variable	line:1
 a85decode	../env/lib/python3.6/base64.py	/^def a85decode(b, *, foldspaces=False, adobe=False, ignorechars=b' \\t\\n\\r\\v'):$/;"	kind:function	line:351
 a85encode	../env/lib/python3.6/base64.py	/^def a85encode(b, *, foldspaces=False, wrapcol=0, pad=False, adobe=False):$/;"	kind:function	line:310
 aRepr	../env/lib/python3.6/reprlib.py	/^aRepr = Repr()$/;"	kind:variable	line:163
@@ -2541,6 +2549,7 @@ automatically	../env/lib/python3.6/importlib/util.py	/^        warnings.warn('Th
 automatically	../env/lib/python3.6/importlib/util.py	/^    warnings.warn('The import system now takes care of this automatically.',$/;"	kind:namespace	line:186
 avoid	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    import tokenize  # To avoid bootstrap issues.$/;"	kind:namespace	line:512
 avoid	../env/lib/python3.6/weakref.py	/^import collections  # Import after _weakref to avoid circular import.$/;"	kind:namespace	line:24
+b	../logic_tester.py	/^b="Welcome" $/;"	kind:variable	line:2
 b16decode	../env/lib/python3.6/base64.py	/^def b16decode(s, casefold=False):$/;"	kind:function	line:260
 b16encode	../env/lib/python3.6/base64.py	/^def b16encode(s):$/;"	kind:function	line:254
 b32decode	../env/lib/python3.6/base64.py	/^def b32decode(s, casefold=False, map01=None):$/;"	kind:function	line:180
@@ -2602,6 +2611,7 @@ bz2_codec.py	../env/lib/python3.6/encodings/bz2_codec.py	1;"	kind:file	line:1
 bz2_decode	../env/lib/python3.6/encodings/bz2_codec.py	/^def bz2_decode(input, errors='strict'):$/;"	kind:function	line:19
 bz2_encode	../env/lib/python3.6/encodings/bz2_codec.py	/^def bz2_encode(input, errors='strict'):$/;"	kind:function	line:15
 bz2open	../env/lib/python3.6/tarfile.py	/^    def bz2open(cls, name, mode="r", fileobj=None, compresslevel=9, **kwargs):$/;"	kind:member	line:1653
+c	../logic_tester.py	/^c="Good-Bye"$/;"	kind:variable	line:3
 cache	../env/lib/python3.6/linecache.py	/^cache = {}$/;"	kind:variable	line:27
 cache_clear	../env/lib/python3.6/functools.py	/^    def cache_clear():$/;"	kind:function	line:588
 cache_from_source	../env/lib/python3.6/imp.py	/^def cache_from_source(path, debug_override=None):$/;"	kind:function	line:72
@@ -3045,6 +3055,9 @@ curdir	../env/lib/python3.6/ntpath.py	/^curdir = '.'$/;"	kind:variable	line:24
 curdir	../env/lib/python3.6/os.py	/^from os.path import (curdir, pardir, sep, pathsep, defpath, extsep, altsep,$/;"	kind:namespace	line:92
 curdir	../env/lib/python3.6/posixpath.py	/^curdir = '.'$/;"	kind:variable	line:30
 currency	../env/lib/python3.6/locale.py	/^def currency(val, symbol=True, grouping=False, international=False):$/;"	kind:function	line:254
+d	../interview_questions_dictionarySetAll.py	/^d = SpecialDictionary()$/;"	kind:variable	line:30
+d	../logic_tester.py	/^d="Good-Bye" $/;"	kind:variable	line:4
+data	../logic_tester.py	/^data=(x*10 for x in range(3)) $/;"	kind:variable	line:10
 data_encoding	../env/lib/python3.6/codecs.py	/^    data_encoding = 'unknown'$/;"	kind:variable	line:769
 debug	../env/lib/python3.6/tarfile.py	/^    debug = 0                   # May be set from 0 (no msgs) to 3 (all msgs)$/;"	kind:variable	line:1386
 decode	../env/lib/python3.6/base64.py	/^def decode(input, output):$/;"	kind:function	line:506
@@ -3924,7 +3937,12 @@ get	../env/lib/python3.6/collections/__init__.py	/^    def get(self, key, defaul
 get	../env/lib/python3.6/sre_parse.py	/^    def get(self):$/;"	kind:member	line:253
 get	../env/lib/python3.6/weakref.py	/^    def get(self, key, default=None):$/;"	kind:member	line:193
 get	../env/lib/python3.6/weakref.py	/^    def get(self, key, default=None):$/;"	kind:member	line:428
+get	../interview_questions_dictionarySetAll.py	/^    def get(self, k):$/;"	kind:member	line:20
+get	../interview_questions_dictionarySetAll.py	/^    def get(self, k):$/;"	kind:member	line:55
+getAllMinStack	../L155. Min Stack.py	/^    def getAllMinStack(self):$/;"	kind:member	line:63
+getAllStack	../L155. Min Stack.py	/^    def getAllStack(self):$/;"	kind:member	line:66
 getMandatoryRelease	../env/lib/python3.6/__future__.py	/^    def getMandatoryRelease(self):$/;"	kind:member	line:92
+getMin	../L155. Min Stack.py	/^    def getMin(self):$/;"	kind:member	line:57
 getOptionalRelease	../env/lib/python3.6/__future__.py	/^    def getOptionalRelease(self):$/;"	kind:member	line:84
 getSum	../L371_Sum_of_Two_Integers.py	/^    def getSum(self, a, b):$/;"	kind:member	line:8
 get_archive_formats	../env/lib/python3.6/shutil.py	/^def get_archive_formats():$/;"	kind:function	line:721
@@ -4151,6 +4169,7 @@ gi_frame	../env/lib/python3.6/types.py	/^    def gi_frame(self):$/;"	kind:member
 gi_running	../env/lib/python3.6/types.py	/^    def gi_running(self):$/;"	kind:member	line:194
 gi_yieldfrom	../env/lib/python3.6/types.py	/^    def gi_yieldfrom(self):$/;"	kind:member	line:197
 global_matches	../env/lib/python3.6/rlcompleter.py	/^    def global_matches(self, text):$/;"	kind:member	line:102
+greet	../logic_tester.py	/^greet = wish(" Happy Birthday ") $/;"	kind:variable	line:19
 group	../env/lib/python3.6/tokenize.py	/^def group(*choices): return '(' + '|'.join(choices) + ')'$/;"	kind:function	line:112
 groups	../env/lib/python3.6/sre_parse.py	/^    def groups(self):$/;"	kind:member	line:82
 grp	../env/lib/python3.6/tarfile.py	/^    grp = None$/;"	kind:variable	line:59
@@ -4220,6 +4239,7 @@ interrupt_main	../env/lib/python3.6/_dummy_thread.py	/^def interrupt_main():$/;"
 intersection	../L349_Intersection_of_Two_Arrays.py	/^    def intersection(self, nums1, nums2):$/;"	kind:member	line:13
 intersection	../env/lib/python3.6/_weakrefset.py	/^    def intersection(self, other):$/;"	kind:member	line:143
 intersection_update	../env/lib/python3.6/_weakrefset.py	/^    def intersection_update(self, other):$/;"	kind:member	line:147
+interview_questions_dictionarySetAll.py	../interview_questions_dictionarySetAll.py	1;"	kind:file	line:1
 inv	../env/lib/python3.6/operator.py	/^def inv(a):$/;"	kind:function	line:91
 invalidate_caches	../env/lib/python3.6/importlib/__init__.py	/^def invalidate_caches():$/;"	kind:function	line:66
 invalidate_caches	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    def invalidate_caches(cls):$/;"	kind:member	line:1060
@@ -4344,6 +4364,7 @@ koi8_t.py	../env/lib/python3.6/encodings/koi8_t.py	1;"	kind:file	line:1
 koi8_u.py	../env/lib/python3.6/encodings/koi8_u.py	1;"	kind:file	line:1
 kwlist	../env/lib/python3.6/keyword.py	/^kwlist = [$/;"	kind:variable	line:15
 kz1048.py	../env/lib/python3.6/encodings/kz1048.py	1;"	kind:file	line:1
+l	../logic_tester.py	/^l = [1,2,3,4]$/;"	kind:variable	line:29
 l1	../L21_Merge_Two_Sorted_Lists.py	/^l1 = ListNode(2)$/;"	kind:variable	line:87
 l2	../L21_Merge_Two_Sorted_Lists.py	/^l2 = ListNode(1)$/;"	kind:variable	line:92
 late	../env/lib/python3.6/shutil.py	/^    import tarfile  # late import for breaking circular dependency$/;"	kind:namespace	line:623
@@ -4391,6 +4412,7 @@ localeconv	../env/lib/python3.6/locale.py	/^def localeconv():$/;"	kind:function	
 lock_held	../env/lib/python3.6/imp.py	/^from _imp import (lock_held, acquire_lock, release_lock,$/;"	kind:namespace	line:9
 locked	../env/lib/python3.6/_dummy_thread.py	/^    def locked(self):$/;"	kind:member	line:140
 logging	../env/lib/python3.6/hashlib.py	/^        import logging$/;"	kind:namespace	line:245
+logic_tester.py	../logic_tester.py	1;"	kind:file	line:1
 lognormvariate	../env/lib/python3.6/random.py	/^    def lognormvariate(self, mu, sigma):$/;"	kind:member	line:419
 lognormvariate	../env/lib/python3.6/random.py	/^lognormvariate = _inst.lognormvariate$/;"	kind:variable	line:754
 longrange_iterator	../env/lib/python3.6/_collections_abc.py	/^longrange_iterator = type(iter(range(1 << 1000)))$/;"	kind:variable	line:45
@@ -4498,6 +4520,7 @@ module_repr	../env/lib/python3.6/importlib/abc.py	/^    def module_repr(self, mo
 most_common	../env/lib/python3.6/collections/__init__.py	/^    def most_common(self, n=None):$/;"	kind:member	line:544
 move	../env/lib/python3.6/shutil.py	/^def move(src, dst, copy_function=copy2):$/;"	kind:function	line:506
 move_to_end	../env/lib/python3.6/collections/__init__.py	/^    def move_to_end(self, key, last=True):$/;"	kind:member	line:182
+ms	../L155. Min Stack.py	/^ms = MinStack()$/;"	kind:variable	line:70
 mul	../env/lib/python3.6/operator.py	/^def mul(a, b):$/;"	kind:function	line:104
 name	../env/lib/python3.6/enum.py	/^    def name(self):$/;"	kind:member	line:593
 name	../env/lib/python3.6/hmac.py	/^    def name(self):$/;"	kind:member	line:87
@@ -4628,6 +4651,7 @@ peek	../env/lib/python3.6/weakref.py	/^    def peek(self):$/;"	kind:member	line:
 perror	../env/lib/python3.6/tokenize.py	/^    def perror(message):$/;"	kind:function	line:736
 pickle	../env/lib/python3.6/copyreg.py	/^def pickle(ob_type, pickle_function, constructor_ob=None):$/;"	kind:function	line:12
 pickle_complex	../env/lib/python3.6/copyreg.py	/^    def pickle_complex(c):$/;"	kind:function	line:34
+pop	../L155. Min Stack.py	/^    def pop(self):$/;"	kind:member	line:42
 pop	../env/lib/python3.6/_collections_abc.py	/^    def pop(self):$/;"	kind:member	line:586
 pop	../env/lib/python3.6/_collections_abc.py	/^    def pop(self, index=-1):$/;"	kind:member	line:989
 pop	../env/lib/python3.6/_collections_abc.py	/^    def pop(self, key, default=__marker):$/;"	kind:member	line:790
@@ -4652,12 +4676,15 @@ pow	../env/lib/python3.6/operator.py	/^def pow(a, b):$/;"	kind:function	line:124
 prepare_class	../env/lib/python3.6/types.py	/^def prepare_class(name, bases=(), kwds=None):$/;"	kind:function	line:64
 prev_sys_path	../env/bin/activate_this.py	/^prev_sys_path = list(sys.path)$/;"	kind:variable	line:23
 prf	../env/lib/python3.6/hashlib.py	/^        def prf(msg, inner=inner, outer=outer):$/;"	kind:function	line:200
+print_all	../interview_questions_dictionarySetAll.py	/^    def print_all(self):$/;"	kind:member	line:26
+print_all	../interview_questions_dictionarySetAll.py	/^    def print_all(self):$/;"	kind:member	line:61
 print_function	../env/lib/python3.6/__future__.py	/^print_function = _Feature((2, 6, 0, "alpha", 2),$/;"	kind:variable	line:126
 ptcp154.py	../env/lib/python3.6/encodings/ptcp154.py	1;"	kind:file	line:1
 punycode.py	../env/lib/python3.6/encodings/punycode.py	1;"	kind:file	line:1
 punycode_decode	../env/lib/python3.6/encodings/punycode.py	/^def punycode_decode(text, errors):$/;"	kind:function	line:182
 punycode_encode	../env/lib/python3.6/encodings/punycode.py	/^def punycode_encode(text):$/;"	kind:function	line:117
 purge	../env/lib/python3.6/re.py	/^def purge():$/;"	kind:function	line:235
+push	../L155. Min Stack.py	/^    def push(self, x):$/;"	kind:member	line:33
 pwd	../env/lib/python3.6/posixpath.py	/^            import pwd$/;"	kind:namespace	line:246
 pwd	../env/lib/python3.6/posixpath.py	/^        import pwd$/;"	kind:namespace	line:251
 pwd	../env/lib/python3.6/tarfile.py	/^    import pwd$/;"	kind:namespace	line:53
@@ -4857,6 +4884,8 @@ sep	../env/lib/python3.6/os.py	/^from os.path import (curdir, pardir, sep, paths
 sep	../env/lib/python3.6/posixpath.py	/^sep = '\/'$/;"	kind:variable	line:33
 set	../env/lib/python3.6/site.py	/^    from sets import Set as set$/;"	kind:namespace	line:75
 setBEGINLIBPATH	../env/lib/python3.6/site.py	/^def setBEGINLIBPATH():$/;"	kind:function	line:362
+set_all	../interview_questions_dictionarySetAll.py	/^    def set_all(self, v):$/;"	kind:member	line:16
+set_all	../interview_questions_dictionarySetAll.py	/^    def set_all(self, v):$/;"	kind:member	line:51
 set_data	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    def set_data(self, path, data):$/;"	kind:member	line:718
 set_data	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    def set_data(self, path, data, *, _mode=0o666):$/;"	kind:member	line:850
 set_data	../env/lib/python3.6/importlib/abc.py	/^    def set_data(self, path, data):$/;"	kind:member	line:319
@@ -4865,6 +4894,8 @@ set_loader	../env/lib/python3.6/importlib/util.py	/^def set_loader(fxn):$/;"	kin
 set_loader_wrapper	../env/lib/python3.6/importlib/util.py	/^    def set_loader_wrapper(self, *args, **kwargs):$/;"	kind:function	line:158
 set_package	../env/lib/python3.6/importlib/util.py	/^def set_package(fxn):$/;"	kind:function	line:132
 set_package_wrapper	../env/lib/python3.6/importlib/util.py	/^    def set_package_wrapper(*args, **kwargs):$/;"	kind:function	line:139
+set_value	../interview_questions_dictionarySetAll.py	/^    def set_value(self, k, v):$/;"	kind:member	line:13
+set_value	../interview_questions_dictionarySetAll.py	/^    def set_value(self, k, v):$/;"	kind:member	line:48
 setcopyright	../env/lib/python3.6/site.py	/^def setcopyright():$/;"	kind:function	line:472
 setdefault	../env/lib/python3.6/_collections_abc.py	/^    def setdefault(self, key, default=None):$/;"	kind:member	line:851
 setdefault	../env/lib/python3.6/collections/__init__.py	/^    def setdefault(self, key, default=None):$/;"	kind:member	line:250
@@ -5077,6 +5108,7 @@ tokenize	../env/lib/python3.6/importlib/_bootstrap_external.py	/^    import toke
 tokenize	../env/lib/python3.6/linecache.py	/^import tokenize$/;"	kind:namespace	line:11
 tokenize	../env/lib/python3.6/tokenize.py	/^def tokenize(readline):$/;"	kind:function	line:464
 tokenize.py	../env/lib/python3.6/tokenize.py	1;"	kind:file	line:1
+top	../L155. Min Stack.py	/^    def top(self):$/;"	kind:member	line:51
 top	../env/lib/python3.6/importlib/_bootstrap.py	/^        raise ValueError('attempted relative import beyond top-level package')$/;"	kind:namespace	line:847
 total_ordering	../env/lib/python3.6/functools.py	/^def total_ordering(cls):$/;"	kind:function	line:193
 traceback	../env/lib/python3.6/_dummy_thread.py	/^        import traceback$/;"	kind:namespace	line:53
@@ -5177,8 +5209,11 @@ weakref	../env/lib/python3.6/copy.py	/^import weakref$/;"	kind:namespace	line:52
 weakref.py	../env/lib/python3.6/weakref.py	1;"	kind:file	line:1
 weibullvariate	../env/lib/python3.6/random.py	/^    def weibullvariate(self, alpha, beta):$/;"	kind:member	line:650
 weibullvariate	../env/lib/python3.6/random.py	/^weibullvariate = _inst.weibullvariate$/;"	kind:variable	line:761
+welcome	../logic_tester.py	/^def welcome(name): $/;"	kind:function	line:23
 which	../env/lib/python3.6/shutil.py	/^def which(cmd, mode=os.F_OK | os.X_OK, path=None):$/;"	kind:function	line:1093
 windows_locale	../env/lib/python3.6/locale.py	/^windows_locale = {$/;"	kind:variable	line:1399
+wish	../logic_tester.py	/^def wish(message): $/;"	kind:function	line:17
+wish	../logic_tester.py	/^wish=welcome("Joe") $/;"	kind:variable	line:25
 with	../env/lib/python3.6/importlib/_bootstrap.py	/^            raise ImportError('attempted relative import with no known parent '$/;"	kind:namespace	line:918
 with_statement	../env/lib/python3.6/__future__.py	/^with_statement = _Feature((2, 5, 0, "alpha", 1),$/;"	kind:variable	line:122
 wrapped	../env/lib/python3.6/types.py	/^    def wrapped(*args, **kwargs):$/;"	kind:function	line:247
