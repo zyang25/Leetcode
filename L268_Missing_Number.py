@@ -15,7 +15,5 @@ class Solution(object):
         	if ele == None:
         		return newNums.index(ele)
 
-        
-
 nums = [0,1,3]
 print(Solution().missingNumber(nums))
