@@ -13,50 +13,42 @@
 
 
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+from TreeNode import TreeNode
 
-class Solution(object):
 
-	arr = []
-	path = ''
-	def addToPath(self, val, lastEle = False):
-		
-		if lastEle == False:
-			path += str(val) + '->'
-		else:
-			path += str(val)
+class Solution:
 
-		return path
+    def __init__(self, *args, **kwargs):
+        self.paths = list()
 
-	def binaryTreePaths(self, root):
-		"""
+    def binaryTreePaths(self, root):
+        """
         :type root: TreeNode
         :rtype: List[str]
         """
-		if root == None:
-			addToPath(root.val, True)
-			arr.append(path)
-			return
+        path = []
+        self.get_path(root, str(root.val))
+
+    def get_path(self, root, path):
+        
+        if not root:
+            return
+
+        if not root.left and not root.right:
+            self.paths.append(path)
 		
-		if root.left == None:
-			addToPath(root.val)
-			binaryTreePaths(root.right)
-		if root.right == None:
-			addToPath(root.val)
-			binaryTreePaths(root.left)
+        if root.left:
+        	self.get_path(root.left, path + '->' + str(root.left.val))
 
+        if root.right:
+            self.get_path(root.right, path + '->' + str(root.right.val))
 
-
-
-
-tree = TreeNode(1)
-tree.left = TreeNode(2)
-tree.right = TreeNode(3)
-
-tree.left.right = TreeNode(5)
-
-print(Solution().binaryTreePaths(tree).arr)       
+t = TreeNode()
+t1 = t.t1()
+TreeNode.print_tree(t1)
+Solution().binaryTreePaths(t1)
