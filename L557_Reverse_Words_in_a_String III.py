@@ -5,6 +5,7 @@
 # Output: "s'teL ekat edoCteeL tsetnoc"
 # Note: In the string, each word is separated by single space and there will not be any extra space in the string.
 
+# Think about the last word. How are you going to do it
 class Solution:
     def reverseWords(self, s):
         """
