@@ -22,6 +22,16 @@ class TreeNode(object):
 #         7    2      1
     
     def t1(self):
+
+        '''
+                       5
+                      / \
+                     4   8
+                    /   / \
+                   11  13  4
+                  /  \      \
+                 7    2      1
+        '''
         t = TreeNode(5)
         t.left = TreeNode(4)
         t.left.left = TreeNode(11)
