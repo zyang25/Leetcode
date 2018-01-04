@@ -1,4 +1,6 @@
-'''Write a program to encode a string in below format : 
+'''
+Write a program to encode a string in below format : 
+
 aabbbcc => a2b3c2
 aaa            => a3                                  
 aabbaa   => a2b2a2   
@@ -9,12 +11,14 @@ ab = > a1b1
 
 '''
 
+# You need to watch out the last index, otherwise the last character group will be added
+
 def encodeString(s):
     
     if len(s) == 0:
-        return None
+        return ''
     if len(s) == 1:
-        return s
+        return s + str(1)
     
     prev = s[0]
     curr = s[1]
@@ -25,8 +29,13 @@ def encodeString(s):
     result = ''
     while counter < len(s):
         
+        # start from second c
         curr = s[counter]
-        if prev == curr:
+        
+        # last character
+        if prev == curr and counter == len(s)-1:
+            result += prev + str(lCounter+1)
+        elif prev == curr:
             lCounter += 1
         else:
             result += prev + str(lCounter)
@@ -39,6 +48,3 @@ def encodeString(s):
 
 s = "aabbbcc"
 print(encodeString(s))
-        
-    
-    
