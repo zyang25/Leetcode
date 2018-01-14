@@ -43,3 +43,25 @@ class TreeNode(object):
         t.right.right = TreeNode(4)
         t.right.right.right = TreeNode(1)
         return t
+
+    def get_same_nodes_tree(self):
+        
+                
+                #         1
+                #       /   \
+                #      4     5
+                #     / \     
+                #    4   4     
+                #   /  \      
+                #  4    5      
+                
+
+        t = TreeNode(1)
+        t.left = TreeNode(4)
+        t.left.left = TreeNode(4)
+        t.left.right = TreeNode(4)
+        t.left.left.left = TreeNode(4)
+        t.left.left.right = TreeNode(5)
+        t.right = TreeNode(5)
+        
+        return t
