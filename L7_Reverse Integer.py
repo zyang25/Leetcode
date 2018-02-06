@@ -36,13 +36,13 @@ class Solution(object):
             new_num = new_num * 10 + most_right
 
             # 123 -> 12
-            x = x / 10
+            x = x // 10
         if new_num > 2147483647:
             return 0
         else:
             return sign * new_num
 
-print(Solution().reverse(-12321))
+print(Solution().reverse(-123))
 
 #print(Solution().reverse(-123))
 

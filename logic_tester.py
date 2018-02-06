@@ -37,8 +37,53 @@ def encodeString(s):
         
     return result
 
-s = "aabbbcc"
-print(encodeString(s))
+# s = "aabbbcc"
+# print(encodeString(s))
+
+
+
+# class UniqueNumber:
+    
+#     def __init__(self, arr):
+#         self.arr = arr
+
+#     def __iter__(self):
+#         self.index = 0
+#         dup = set()
+#         return self
+
+#     def __next__(self):
+#         if self.index == len(self.arr):
+#             raise StopIteration
         
-    
-    
+#         ele = self.arr[self.index]
+#         self.index += 1
+#         return ele
+
+# uni = UniqueNumber([1,2,3,4,4,5])
+
+# for ele in uni:
+#     print(ele)
+
+
+class Solution(object):
+    def wordBreak(self, s, wordDict):
+        def canBreak(s, m, wordDict):
+            if s in m: return m[s]
+            if s in wordDict: 
+                m[s] = True
+                return True
+            
+            for i in range(1, len(s)):
+                r = s[i:]
+                if r in wordDict and canBreak(s[0:i], m, wordDict):
+                    m[s] = True
+                    return True
+            
+            m[s] = False
+            return False
+            
+        return canBreak(s, {}, set(wordDict))
+
+Solution().wordBreak("Ilovesamsung", ['I','love','samsung','sam','sung'])
+
