@@ -87,3 +87,93 @@ class Solution(object):
 
 Solution().wordBreak("Ilovesamsung", ['I','love','samsung','sam','sung'])
 
+
+
+
+def test():
+    stack = []
+    def test2():
+        for i in range(12):
+            stack.append(i)
+        return stack
+
+    print(test2())
+    stack = []
+    print(test2())
+
+def test_tree():
+    from TreeNode import TreeNode
+    import Queue
+    t = TreeNode().t1()
+    q = Queue.LifoQueue()
+    q.put(t)
+    def traverse(tree):
+
+#               5
+#              / \
+#             4   8
+#            /   / \
+#           11  13  4
+#          /  \      \
+#         7    2      1
+        while not q.empty():
+            node = q.get()
+            if node.left:
+                q.put(node.left)
+            if node.right:
+                q.put(node.right)
+
+        # if tree == None:
+        #     return
+        # else:
+        #     print(tree.val)
+        #     traverse(tree.left)
+        #     traverse(tree.right)
+    
+    traverse(t)
+
+test_tree()
+
+
+#print([i for i in range(100)])
+
+
+def f(*args, **kwargs):
+    print(args, kwargs)
+d = {'a':7,'b':8,'c':9}
+
+f(1,2,3,4,c=321)
+
+
+class MyClass(object):
+    
+    def __init__(self):
+        self._some_property = "properties are nice"
+        self._some_other_property = "VERY nice"
+    
+    def normal_method(*args,**kwargs):
+        print("calling normal_method({0},{1})".format(args,kwargs))
+    
+    @classmethod
+    def class_method(*args,**kwargs):
+        print("calling class_method({0},{1})".format(args,kwargs))
+    
+    @staticmethod
+    def static_method(*args,**kwargs):
+        print("calling static_method({0},{1})".format(args,kwargs))
+    
+    @property
+    def some_property(self,*args,**kwargs):
+        print("calling some_property getter({0},{1},{2})".format(self,args,kwargs))
+        return self._some_property
+    
+    @some_property.setter
+    def some_property(self,*args,**kwargs):
+        print("calling some_property setter({0},{1},{2})".format(self,args,kwargs))
+        self._some_property = args[0]
+    
+    @property
+    def some_other_property(self,*args,**kwargs):
+        print("calling some_other_property getter({0},{1},{2})".format(self,args,kwargs))
+        return self._some_other_property
+    
